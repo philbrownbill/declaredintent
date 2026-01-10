@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="A missing primitive for accountable systems in the age of AI: declare, fix, and bind intent before execution." name="description"/>
+<meta content="" name="author"/>
+<title>The Declared Intent Layer</title>
+<!-- Favicon-->
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<!-- Bootstrap Icons-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css"/>
+<!-- SimpleLightbox plugin CSS-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet"/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="/declaredintent/">Declared Intent</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/declaredintent/#manifesto">Manifesto</a></li>
+        <li class="nav-item"><a class="nav-link" href="/declaredintent/#examples">Examples</a></li>
+        <li class="nav-item"><a class="nav-link" href="/declaredintent/guide/">Companion guide</a></li>
+        <li class="nav-item"><a class="nav-link" href="/declaredintent/bio/">Bio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/declaredintent/#feedback">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="masthead" style="padding-top: 8rem; padding-bottom: 4rem;">
+  <div class="container px-4 px-lg-5">
+    <h1 class="text-white">Companion guide</h1>
+    <p class="text-white-75 mb-0">Worked examples, clarifications, and deeper explanation.</p>
+  </div>
+</header>
+<section class="page-section">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-9">
+        
+<p class="lead">This companion guide expands the manifesto with full worked examples and the “why this isn’t just documentation” explanation.</p>
+<h2 class='mt-4'>Appendix A — Worked Examples</h2>
+<h3 class='mt-4'>End-to-End Example: AI Governance (Cross-Domain)</h3>
+<p>(Finance + Health + Public Services)</p>
+<h4 class='mt-3'>Scenario</h4>
+<p>Consider a public authority deploying an AI system  that provides An AI assistant to help a person apply for public support. To do this, it touches financial data, health-related information, and government systems.</p>
+<h4 class='mt-3'>1️⃣ Declared Intent Layer</h4>
+<p>What this layer is doing</p>
+<p>This is the moment where someone must stop implying what they mean and explicitly commit to what they are about to do – digitally.</p>
+<p>Nothing runs yet.</p>
+<p>No data is touched.</p>
+<p>This is about making intent visible and fixed.</p>
+<p>//</p>
+<p>The Declared Intent Record (DIR)</p>
+<p>Intent_ID: DIR-AI-2026-001</p>
+<p>WHAT    assess</p>
+<p>ON      support_eligibility</p>
+<p>FOR     individual_applicant</p>
+<p>HOW     assistive</p>
+<p>LIMIT   no_automated_decisions, explainable, human_review</p>
+<p>OUTPUT  recommendation</p>
+<p>//</p>
+<p>What is recorded</p>
+<p>The declared intent</p>
+<p>Who declared it</p>
+<p>When it was declared</p>
+<p>A unique Intent_ID</p>
+<p>Why this layer exists</p>
+<p>So that later no one has to ask:</p>
+<ul><li>“What did you mean the system to do?”</li></ul>
+<p>The answer is already fixed.</p>
+<h4 class='mt-3'>2️⃣ Authority</h4>
+<p>What this layer is doing</p>
+<p>This layer answers a very narrow question:</p>
+<ul><li>“Are you allowed to attempt this specific intent?”</li></ul>
+<p>It does not judge whether the idea is good or safe — only whether the right people are authorised to try.</p>
+<p>What happens here</p>
+<p>Different authorities look at the same intent:</p>
+<p>Different authorities look at the same intent:</p>
+<p>Is this organisation allowed to process financial data for this purpose?</p>
+<p>Is it permitted to handle health-related information?</p>
+<p>Is it allowed to interact with public-sector systems?</p>
+<p>Each authority gives approval (or refusal) for this intent, not in general.</p>
+<p>What is recorded</p>
+<p>Intent_ID</p>
+<p>Approval decision</p>
+<p>Who approved it</p>
+<p>Any limits on approval</p>
+<p>Why this layer exists</p>
+<p>To stop “we were allowed to run the system” being confused with:</p>
+<p>To stop “we were allowed to run the system” being confused with:</p>
+<p>“We were allowed to run this kind of system for this purpose.”</p>
+<h4 class='mt-3'>3️⃣ Policy</h4>
+<p>What this layer is doing</p>
+<p>This layer applies existing rules to the declared intent.</p>
+<p>It asks:</p>
+<ul><li>“Given what you say you are about to do, what rules apply?”</li></ul>
+<p>No new rules are invented here.</p>
+<p>What happens here</p>
+<p>Different policy regimes look at the same intent:</p>
+<p>Different policy regimes look at the same intent:</p>
+<p>Health policy sees FOR = individual_applicant</p>
+<p>→ requires safeguards and explanations</p>
+<p>Financial policy sees OUTPUT = recommendation</p>
+<p>→ prohibits automated decisions</p>
+<p>Public-sector policy sees HOW = assistive</p>
+<p>→ requires human oversight</p>
+<p>Each policy body interprets the same intent, but through its own rules.</p>
+<p>What is recorded</p>
+<p>Intent_ID</p>
+<p>Which policies apply</p>
+<p>What conditions must be met</p>
+<p>What outcomes are prohibited</p>
+<p>Why this layer exists</p>
+<p>So rules are applied before execution, not inferred after harm.</p>
+<h4 class='mt-3'>4️⃣ Execution</h4>
+<p>What this layer is doing</p>
+<p>Only now does the system actually run.</p>
+<p>This layer is about doing the thing that was declared, and nothing else.</p>
+<p>What happens here</p>
+<p>The AI system:</p>
+<ul><li>gathers information</li><li>explains criteria</li><li>produces a recommendation</li></ul>
+<p>It does not:</p>
+<ul><li>make final decisions</li><li>submit applications automatically</li></ul>
+<p>Every action taken is tagged with Intent_ID.</p>
+<p>What is recorded</p>
+<p>Intent_ID</p>
+<p>What actions were taken</p>
+<p>What outputs were produced</p>
+<p>When and how the system ran</p>
+<p>Why this layer exists</p>
+<p>So behaviour can be checked against promises, not assumptions.</p>
+<h4 class='mt-3'>5️⃣ Audit / Replay</h4>
+<p>What this layer is doing</p>
+<p>This layer asks:</p>
+<ul><li>“Did what happened match what was declared and approved?”</li></ul>
+<p>It does not reinterpret intent.</p>
+<p>It compares reality to the record.</p>
+<p>What happens here</p>
+<p>An auditor retrieves everything linked to Intent_ID:</p>
+<ul><li>the declared intent</li><li>the approvals</li><li>the applicable rules</li><li>the execution history</li></ul>
+<p>Why this layer exists</p>
+<p>So accountability is factual, not narrative.</p>
+<p>Why the Declared Intent Record Is Not Just a Prompt, Specification, or Model Card</p>
+<p>Before an AI system is deployed, intent is typically expressed through prompts, system instructions, design specifications, model cards, risk assessments, or governance documentation. These artefacts already communicate what a system is meant to do.</p>
+<p>However, like building plans, these artefacts do not function as a Declared Intent Record in the sense proposed here.</p>
+<p>Prompts and system instructions are inherently mutable. They are routinely edited, tuned, overwritten, or replaced during development and operation. While this flexibility is essential for system improvement, it means there is often no single, fixed record of what the system was committed to doing at the moment it was authorised to run.</p>
+<p>Design documents, model cards, and governance statements may be more stable, but they are not operationally binding. They describe intent in prose, are not consistently referenced at runtime, and are rarely linked directly to execution logs, policy decisions, or audit trails. As a result, intent must be inferred after the fact from behaviour, configuration, or outcomes.</p>
+<p>Most importantly, these artefacts are not designed to operate across domains. An AI system may simultaneously implicate data protection law, financial regulation, healthcare governance, and public-sector accountability. Each domain interprets intent independently, often using different documents, assumptions, or versions of the system description.</p>
+<p>The Declared Intent Record differs in three critical ways:</p>
+<p>The Declared Intent Record differs in three critical ways:</p>
+<p>Immutability</p>
+<p>The DIR fixes intent at the point of authorisation. Once execution occurs, the declared intent cannot be altered. Changes in purpose require a new declaration, preserving a clear history of commitments and preventing intent from being retroactively rewritten to fit outcomes.</p>
+<p>Standardised structure</p>
+<p>The DIR expresses intent in a minimal, structured, domain-agnostic form. This avoids reliance on narrative descriptions and allows intent to be interpreted consistently by different systems and governance bodies.</p>
+<p>Cross-domain binding</p>
+<p>The DIR is explicitly designed to be referenced by authority, policy, execution, and audit layers across domains. The same declared intent can be evaluated by data protection authorities, AI governance bodies, financial regulators, and internal oversight teams, each applying their own rules but referencing the same commitment.</p>
+<p>In this sense, the Declared Intent Layer does not replace prompts, specifications, or model documentation. It formalises the moment of commitment that these artefacts imply, and makes that commitment durable, inspectable, and binding across systems and time.</p>
+<p>Prompts and documentation describe intent, but they are mutable, narrative, and domain-local; a Declared Intent Record fixes intent immutably and binds it across policy, execution, and audit.</p>
+<h3 class='mt-4'>Example 2: Building a House</h3>
+<p>(Same structure, different domain)</p>
+<h4 class='mt-3'>Scenario</h4>
+<p>A homeowner builds a house on a plot of land.</p>
+<h3 class='mt-4'>Why the Declared Intent Record Is Not Just a Building Plan</h3>
+<p>Before construction begins, a homeowner must declare exactly what they intend to build. In the physical world, this declaration is typically expressed through building plans, planning applications, and design documents. These artefacts already capture intent in a practical sense.</p>
+<p>However, these artefacts do not function as a Declared Intent Record in the sense proposed here.</p>
+<p>Building plans are not immutable. They are routinely revised, amended, and superseded as construction progresses. While this flexibility is operationally necessary, it means that there is often no single, fixed record of what was committed to at the moment permission was granted. Intent can shift without a clear historical anchor.</p>
+<p>More importantly, building plans are not designed to act as a binding reference across systems or domains. Even when plans are given identifiers and linked to planning approvals or inspections, these links are local and non-standardised. They do not propagate cleanly into other systems that may have a legitimate interest in the declared intent, such as financial institutions, insurers, or regulatory bodies operating outside the planning domain.</p>
+<p>As a result, different actors may rely on different versions of the “plan,” interpret intent differently, or reconstruct intent retrospectively based on outcomes rather than commitments.</p>
+<p>The Declared Intent Record differs in three critical ways:</p>
+<p>The Declared Intent Record differs in three critical ways:</p>
+<p>Immutability</p>
+<p>The DIR fixes intent at a specific moment in time. Changes to intent require the creation of a new record, rather than the modification of the original. This preserves a clear, auditable history of commitments.</p>
+<p>Standardised structure</p>
+<p>The DIR expresses intent in a consistent, domain-agnostic form. This allows intent to be referenced and interpreted across systems without translation or reinterpretation.</p>
+<p>Cross-domain binding</p>
+<p>The DIR is explicitly designed to be referenced by authority, policy, execution, and audit layers across domains. The same declared intent can be evaluated by planning authorities, building inspectors, financial institutions, insurers, and auditors, each applying their own rules but referencing the same commitment.</p>
+<p>In this sense, the Declared Intent Layer does not replace building plans. It formalises the moment of commitment that plans imply, and makes that commitment durable, inspectable, and reusable beyond the boundaries of a single system or sector.</p>
+<h4 class='mt-3'>1️⃣ Declared Intent Layer</h4>
+<p>What this layer is doing</p>
+<p>The homeowner must declare exactly what they intend to build.</p>
+<p>//</p>
+<p>Declared Intent Record</p>
+<p>Intent_ID: DIR-BUILD-2026-014</p>
+<p>WHAT    build</p>
+<p>ON      plot_12_elm_street</p>
+<p>FOR     residential_use</p>
+<p>HOW     single_family_dwelling</p>
+<p>LIMIT   max_2_storeys, footprint&lt;=120m2</p>
+<p>OUTPUT  completed_house</p>
+<p>//</p>
+<p>Why this layer exists</p>
+<p>So later no one argues about what was “meant”.</p>
+<h4 class='mt-3'>2️⃣ Authority</h4>
+<p>What this layer is doing</p>
+<p>Checks whether the homeowner is allowed to build this house on this land.</p>
+<p>What is recorded</p>
+<p>Intent_ID</p>
+<p>Planning permission</p>
+<p>Ownership verification</p>
+<h4 class='mt-3'>3️⃣ Policy</h4>
+<p>What this layer is doing</p>
+<p>Applies building codes and zoning rules based on the declared plan.</p>
+<p>What is recorded</p>
+<p>Intent_ID</p>
+<p>Applicable regulations</p>
+<p>Required inspections</p>
+<h4 class='mt-3'>4️⃣ Execution</h4>
+<p>What this layer is doing</p>
+<p>The house is built.</p>
+<p>Inspectors check work against the declared intent, not against guesses.</p>
+<p>What is recorded</p>
+<p>Intent_ID</p>
+<p>Inspection results</p>
+<p>Construction milestones</p>
+<h4 class='mt-3'>5️⃣ Audit / Replay</h4>
+<p>What this layer is doing</p>
+<p>Confirms the finished house matches the approved plan.</p>
+<p>Why this works</p>
+<p>Because the plan (intent) was explicit and fixed from the start.</p>
+<h3 class='mt-4'>The Core Pattern (this is the takeaway)</h3>
+<p>Across both examples:</p>
+<p>Across both examples:</p>
+<p>Intent is declared once</p>
+<p>It is given an ID</p>
+<p>Every other layer references, not reinterprets, that intent</p>
+<p>Accountability survives time, systems, and domains</p>
+<p>Each layer performs a different role, but all of them rely on the same immutable declaration of intent, referenced by a shared Intent_ID.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-light py-5">
+  <div class="container px-4 px-lg-5"><div class="small text-center text-muted"><a href="/declaredintent/">Back to manifesto</a></div></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+<script src="/declaredintent/js/scripts.js"></script>
+</body>
+</html>
