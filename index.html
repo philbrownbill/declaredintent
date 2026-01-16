@@ -54,9 +54,9 @@
 <div class="col-lg-8">
 
 <h3 class="h4 mt-4">TL;DR — The short version</h3>
-<p><strong>Declared Intent proposes a global standard for accountable systems: make intent explicit, bind it to authority, and preserve it as systems act.</strong></p>
+<p><strong>Declared Intent proposes a global standard for accountability in complex systems: make intent explicit, bind it to authority, and preserve it as systems act.</strong></p>
 <p>Most system failures are not caused by missing rules, but by <em>intent that is never clearly declared, fixed, and defended at the moment action is authorised and executed</em>. Under pressure, decisions drift, authority becomes ambiguous, and accountability weakens.</p>
-<p><strong>AI and automation make this gap impossible to ignore</strong> because actions scale fast and cross domains at machine speed — but the problem applies to any complex system where authority outpaces accountability.</p>
+<p><strong>AI and automation make this gap impossible to ignore</strong> because actions scale fast and cross domains at machine speed — but the problem applies to any complex system where the power to act scales faster than the ability to explain, justify, and constrain those actions.</p>
 
 <h3 class="h4 mt-4">Concept overview: the Declared Intent Layer</h3>
 <p><strong>This is a proposal for a global standard — not a product, platform, or compliance tool.</strong> The Declared Intent Layer defines a shared, interoperable way for systems to declare intent so that authority, policy interpretation, execution, and audit all reference the same statement of purpose. It specifies <em>what must be made explicit</em>, not <em>how systems must be built</em>, allowing multiple tools, schemas, and implementations to coexist.</p>
@@ -70,7 +70,7 @@
 and <strong>HTML</strong> (standardising how information is structured and referenced on the web without prescribing its content or meaning).
 By the same logic, a standardised intent record could bring clarity and interoperability to governance processes
 without prescribing specific policies, ethics, or outcomes.</p>
-<h3 class="h4 mt-4">1. The Problem Is Not a Lack of Rules</h3><p>From welfare automation and financial systems to aviation safety and AI-assisted decision-making, post-incident inquiries repeatedly find that systems behaved as designed — but without any fixed, shared declaration of what they were intended to do at the moment they acted.</p><p>The most serious failures in modern systems are rarely caused solely by technical failures. They are failures of unexamined, implicit, or mutable intent.</p><p>When harm occurs, organisations reconstruct intent after the fact using emails, policy documents, logs, model cards, and testimony.</p><p>At that point, good faith and bad faith become indistinguishable, and accountability collapses into interpretation.</p><p>As automation increases and AI systems begin to act across domains, organisations, and regulatory boundaries, the absence of a fixed declaration of intent becomes a systemic risk rather than a local oversight.</p><p>This is not because governance is absent.</p><p>It is because intent has no first-class form.</p><p>AI has not created this problem.</p><p>AI has exposed it.</p>
+<h3 class="h4 mt-4">1. The Problem Is Not a Lack of Rules</h3><p>From welfare automation and financial systems to aviation safety and AI-assisted decision-making, post-incident inquiries repeatedly find that systems behaved as designed — but without any fixed, shared declaration of what they were intended to do at the moment they acted.</p><p>The most serious failures in modern systems are rarely caused solely by technical failures. They are failures of unexamined, implicit, or changeable intent.</p><p>When harm occurs, organisations reconstruct intent after the fact using emails, policy documents, logs, model cards, and testimony.</p><p>At that point, good faith and bad faith become indistinguishable, everyone can claim they meant well, and responsibility becomes a matter of opinion.</p><p>As automation increases and AI systems begin to act across domains, organisations, and regulatory boundaries, the absence of a fixed declaration of intent becomes a systemic risk rather than a local oversight.</p><p>This is not because governance is absent.</p><p>It is because intent has no first-class form.</p><p>AI has not created this problem.</p><p>AI has exposed it.</p>
 
 <h3 class="h4 mt-4">2. Why This Is a Global, Cross-Domain Problem</h3>
 <p>Modern systems increasingly operate across domains, organisations, and jurisdictions.</p>
@@ -80,7 +80,7 @@ without prescribing specific policies, ethics, or outcomes.</p>
 <p>When something goes wrong:</p>
 <ul><li>responsibility diffuses</li><li>accountability becomes adversarial</li><li>governance becomes reactive</li><li>compliance becomes duplicative and defensive</li></ul>
 <p>This failure mode is not sector-specific.</p>
-<p>It appears wherever actions have consequences and systems move faster than retrospective explanation.</p>
+<p>It appears because automated systems are authorised to act without a human re-examining intent at the moment of each action, so decisions occur before intent can be questioned or responsibility assigned..</p>
 <p>Without a shared way to declare intent, no amount of domain-specific regulation can fully close this gap.</p>
 <h3 class="h4 mt-4">3. What Exists Today (Implicitly)</h3>
 <p>Intent already exists in every system — but only implicitly.</p>
@@ -108,10 +108,12 @@ without prescribing specific policies, ethics, or outcomes.</p>
 <p>What is missing is a shared primitive.</p>
 <h3 class="h4 mt-4">5. The Diagnosis: A Missing Layer</h3>
 <p>Most modern systems already operate across a familiar stack:</p>
-<p>Authority</p>
-<p>Policy Interpretation</p>
-<p>Execution</p>
-<p>Audit / Replay</p>
+<ul>
+    <li>Authority</li>
+    <li>Policy Interpretation</li>
+    <li>Execution</li>
+    <li>Audit / Replay</li>
+</ul>
 <p>These layers are regulated, staffed, and increasingly automated.</p>
 <p>What does not exist is a shared, explicit representation of intent that binds them together.</p>
 <p>Intent is doing critical work — but it has nowhere to live.</p>
@@ -129,14 +131,17 @@ before action occurs</li></ul>
 <p>It provides the shared reference point that every other layer evaluates against.</p>
 <h3 class="h4 mt-4">7. Declared Intent Records</h3>
 <p>A Declared Intent Record answers, explicitly and in advance:</p>
-<p>What action is intended?</p>
-<p>On what object?</p>
-<p>For whose benefit?</p>
-<p>In what mode or role?</p>
-<p>Under what constraints?</p>
-<p>With what expected output?</p>
+<ul>
+    <li>What action is intended?</li>
+    <li>On what object?</li>
+    <li>For whose benefit?</li>
+    <li>In what mode or role?</li>
+    <li>Under what constraints?</li>
+    <li>With what expected output?</li>
+</ul>
+
 <p>One illustrative structure:</p>
-<p>WHAT → ON → FOR → HOW → LIMIT → OUTPUT</p>
+<pre class="intent-schema">WHAT → ON → FOR → HOW → LIMIT → OUTPUT</pre>
 <p>This structure is:</p>
 <ul><li>minimal</li><li>cross-domain</li><li>non-prescriptive</li></ul>
 <p>Once declared, a DIR is:</p>
@@ -153,8 +158,7 @@ before action occurs</li></ul>
 <p>It standardises the one question every system must answer:</p>
 <p>What was this action intended to do?</p>
 <p>This mirrors past coordination breakthroughs:</p>
-<ul><li>double-entry bookkeeping standardised structure, not finance</li><li>shipping containers standardised form, not goods</li></ul>
-<p>HTTP standardised requests, not applications</p>
+<ul><li>double-entry bookkeeping standardised structure, not finance</li><li>shipping containers standardised form, not goods</li><li>HTTP standardised requests, not applications</li></ul>
 <p>A global intent standard plays the same role for intent.</p>
 <p>A Declared Intent standard enables interoperability between implementations. It allows different organisations, regulators, and tools to reason over intent without requiring shared infrastructure, shared vendors, or shared enforcement mechanisms.</p>
 <h3 class="h4 mt-4">10. Why Now</h3><p>Automation is scaling faster than our ability to explain or govern it after the fact.</p><p>Systems that once operated within narrow domains are now deployed across healthcare, finance, public services, education, and critical infrastructure — often as general-purpose tools adapted to high-stakes use. In these contexts, the central questions are no longer purely technical.</p><p>They are questions of intent.</p><p>As systems act with increasing autonomy and influence, debates increasingly turn on what they were meant to do: whether they were intended to inform, recommend, influence, or decide; whether safeguards were binding or aspirational; and whether harmful outcomes represent deviation or fulfilment of purpose.</p><p>Today, these questions are typically answered retrospectively.</p><p>Intent is inferred from documentation, disclaimers, interface language, or post-hoc statements — often after harm has occurred. As a result, accountability becomes narrative rather than factual, and good-faith design becomes indistinguishable from convenient reinterpretation.</p><p>Regulation is responding by demanding greater accountability, traceability, and explainability. But without a shared, durable way to declare intent before execution, these demands can only ever be met after the fact.</p><p>The gap between what systems do and what organisations can credibly say they meant is widening.</p><p>The Declared Intent Layer closes that gap at the only place it can be closed: before execution.</p>
@@ -163,9 +167,11 @@ before action occurs</li></ul>
 <p>This is not:</p>
 <ul><li>a finished standard</li><li>a product</li><li>an enforcement regime</li></ul>
 <p>It is a proposal for a missing primitive.</p>
-<p>Minimal.</p>
-<p>Cross-domain.</p>
-<p>Non-proprietary.</p>
+<ul>
+    <li>Minimal.</li>
+    <li>Cross-domain.</li>
+    <li>Non-proprietary.</li>
+</ul>
 <p>Its purpose is not to replace existing systems —</p>
 <p>but to bind them together around an explicit declaration of intent.</p>
 <h3 class="h4 mt-4">12. Closing</h3>
@@ -203,7 +209,7 @@ before action occurs</li></ul>
 <h3 class="h5">A call for critique</h3>
 <p>
           This paper proposes the Declared Intent Layer as a missing primitive for accountable systems —
-          particularly, but not exclusively, in AI governance.
+          particularly, but not exclusively, in AI governance. Think law, finance, public administration, healthcare.
         </p>
 <p><strong>It is intentionally incomplete.</strong></p>
 <p>The proposal is published with the belief that the core idea is directionally right, but it does not claim:</p>
@@ -246,9 +252,7 @@ before action occurs</li></ul>
 <h3 class="h5 mt-4">How to contribute</h3>
 <p>Critique can be submitted via:</p>
 <ul>
-<li>email feedback (lowest friction)</li>
-<li>GitHub Issues or Pull Requests (if you prefer to comment in-line)</li>
-<li>written responses or counter-proposals</li>
+<li>email feedback </li>
 </ul>
 <p>
           Please engage with the substance of the proposal rather than assumed motives or implementations.
