@@ -11048,3 +11048,12 @@ hr.divider {
     margin: 16px 0;
     white-space: pre-wrap;
 }
+/* Smaller masthead for content pages (desktop) */
+@media (min-width: 992px) {
+  header.masthead.masthead-small {
+    min-height: 45vh;          /* was effectively ~100vh */
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
