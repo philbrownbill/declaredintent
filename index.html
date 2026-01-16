@@ -42,6 +42,7 @@
 </div>
 <div class="col-lg-8 align-self-baseline">
 <p class="text-white-75 mb-5">A Missing Primitive for Accountable Systems in the Age of AI</p>
+<p class="text-white-50 mb-4"><small>Version 0.1 (draft) — 16 January 2026</small></p>
 <a class="btn btn-primary btn-xl" href="#manifesto">Read the manifesto</a>
 </div>
 </header>
@@ -58,6 +59,7 @@
 <p><strong>AI and automation make this gap impossible to ignore</strong> because actions scale fast and cross domains at machine speed — but the problem applies to any complex system where authority outpaces accountability.</p>
 
 <h3 class="h4 mt-4">Concept overview: the Declared Intent Layer</h3>
+<p><strong>This is a proposal for a global standard — not a product, platform, or compliance tool.</strong> The Declared Intent Layer defines a shared, interoperable way for systems to declare intent so that authority, policy interpretation, execution, and audit all reference the same statement of purpose. It specifies <em>what must be made explicit</em>, not <em>how systems must be built</em>, allowing multiple tools, schemas, and implementations to coexist.</p>
 <p>The Declared Intent Layer is a proposed governance primitive where every action by a system (especially AI) comes with an explicit, fixed statement of intent at the moment of authorisation/execution. In current practice, intent is usually implicit — organisations deduce what a system “meant” to do after the fact by examining outcomes, logs, or emails. This creates ambiguity and erodes accountability, because intent can be argued or reconstructed differently by each stakeholder.</p>
 <p>The Declared Intent Layer introduces a formal <strong>Declared Intent Record (DIR)</strong> for each action. A DIR states: what the action is, on what object, for whose benefit, how/under what method, under what limits or constraints, and what output is expected. Crucially, the DIR is <strong>time-stamped and immutable</strong>: once an action is executed, its declared intent cannot be changed — only superseded by a new declaration for future actions.</p>
 <p>In essence, this creates a single source of truth about purpose that all layers of governance (authority, policy interpretation, execution, audit) can refer back to, instead of each layer making its own assumptions.</p>
@@ -90,7 +92,8 @@
 <p>It is a structural omission.</p>
 <h3 class="h4 mt-4">4. Why Existing AI Governance Approaches Are Necessary — but Insufficient</h3>
 <p>Recent progress in AI governance is real and important:</p>
-<ul><li>documentation of intended use</li><li>model cards and system descriptions</li><li>logging and traceability</li><li>approval workflows and human-in-the-loop controls</li><li>emerging intent-attestation tools</li></ul>
+<ul><li>documentation of intended use</li><li>model cards and system descriptions</li><li>logging and traceability</li><li>approval workflows and human-in-the-loop controls</li><li>emerging intent-attestation and intent-parsing tools</li></ul>
+<p>These efforts demonstrate that explicit, structured intent is both possible and valuable. However, they operate as <em>implementations</em>, not as shared standards. Without a common, cross-domain intent primitive, such tools risk fragmenting into incompatible formats, each answering the same question — “what was this action meant to do?” — in different ways.</p>
 <p>But these approaches share a limitation:</p>
 <p>They treat intent as documentation or metadata — not as a binding artefact.</p>
 <p>In most cases:</p>
@@ -148,6 +151,7 @@ before action occurs</li></ul>
 <ul><li>double-entry bookkeeping standardised structure, not finance</li><li>shipping containers standardised form, not goods</li></ul>
 <p>HTTP standardised requests, not applications</p>
 <p>A global intent standard plays the same role for intent.</p>
+<p>A Declared Intent standard enables interoperability between implementations. It allows different organisations, regulators, and tools to reason over intent without requiring shared infrastructure, shared vendors, or shared enforcement mechanisms.</p>
 <h3 class="h4 mt-4">10. Why Now</h3><p>Automation is scaling faster than our ability to explain or govern it after the fact.</p><p>Systems that once operated within narrow domains are now deployed across healthcare, finance, public services, education, and critical infrastructure — often as general-purpose tools adapted to high-stakes use. In these contexts, the central questions are no longer purely technical.</p><p>They are questions of intent.</p><p>As systems act with increasing autonomy and influence, debates increasingly turn on what they were meant to do: whether they were intended to inform, recommend, influence, or decide; whether safeguards were binding or aspirational; and whether harmful outcomes represent deviation or fulfilment of purpose.</p><p>Today, these questions are typically answered retrospectively.</p><p>Intent is inferred from documentation, disclaimers, interface language, or post-hoc statements — often after harm has occurred. As a result, accountability becomes narrative rather than factual, and good-faith design becomes indistinguishable from convenient reinterpretation.</p><p>Regulation is responding by demanding greater accountability, traceability, and explainability. But without a shared, durable way to declare intent before execution, these demands can only ever be met after the fact.</p><p>The gap between what systems do and what organisations can credibly say they meant is widening.</p><p>The Declared Intent Layer closes that gap at the only place it can be closed: before execution.</p>
 
 <h3 class="h4 mt-4">11. What This Is — and Is Not</h3>
