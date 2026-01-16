@@ -27,12 +27,10 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
 <ul class="navbar-nav ms-auto my-2 my-lg-0">
 <li class="nav-item"><a class="nav-link" href="/declaredintent/#manifesto">Manifesto</a></li>
-<li class="nav-item"><a class="nav-link" href="/declaredintent/#examples">Examples</a></li>
-<li class="nav-item"><a class="nav-link" href="/declaredintent/guide/">Companion guide</a></li>
+<li class="nav-item"><a class="nav-link" href="/declaredintent/examples/">Examples</a></li>
 <li class="nav-item"><a class="nav-link" href="/declaredintent/bio/">Bio</a></li>
 <li class="nav-item"><a class="nav-link" href="/declaredintent/#feedback">Feedback</a></li>
 </ul>
-</div>
 </div>
 </nav>
 <header class="masthead">
@@ -45,9 +43,6 @@
 <div class="col-lg-8 align-self-baseline">
 <p class="text-white-75 mb-5">A Missing Primitive for Accountable Systems in the Age of AI</p>
 <a class="btn btn-primary btn-xl" href="#manifesto">Read the manifesto</a>
-<a class="btn btn-light btn-xl ms-2" href="/declaredintent/guide/">Companion guide</a>
-</div>
-</div>
 </div>
 </header>
 <section class="page-section" id="manifesto">
@@ -57,26 +52,18 @@
 <div class="row gx-4 gx-lg-5 justify-content-center">
 <div class="col-lg-8">
 
-
 <h3 class="h4 mt-4">TL;DR — The short version</h3>
-<p><strong>Declared Intent proposes a global standard for system design: one that ensures systems remember what they were meant to do — even as people change, pressure increases, and complexity grows.</strong></p>
-<p>Most systems fail not because people have bad intentions, but because intent is never clearly declared, tracked, or defended over time.</p>
-<p>Decisions drift. Authority becomes ambiguous. Accountability weakens.</p>
-<p>Good people make reasonable choices that quietly pull organisations, technologies, and societies away from what they originally meant to do.</p>
-<p><strong>This problem is becoming impossible to ignore in AI and automated systems, where decisions scale rapidly and intent can be lost at machine speed — but it applies to any complex system where authority outpaces accountability.</strong></p>
-<p>Declared Intent addresses this by requiring systems to make their intent explicit, bind authority to that intent, interpret rules through it, execute decisions transparently, and leave an auditable trail of how intent was honoured—or compromised.</p>
-<p>It is about ensuring that intent, authority, and accountability remain connected as systems evolve, so decisions remain aligned, explainable, and accountable over time.</p>
-<p>The rest of this manifesto explains why intent decays, how existing systems fail to protect it, and what showing up as a global standard of intent could look like.</p>
+<p><strong>Declared Intent proposes a global standard for accountable systems: make intent explicit, bind it to authority, and preserve it as systems act.</strong></p>
+<p>Most system failures are not caused by missing rules, but by <em>intent that is never clearly declared, fixed, and defended at the moment action is authorised and executed</em>. Under pressure, decisions drift, authority becomes ambiguous, and accountability weakens.</p>
+<p><strong>AI and automation make this gap impossible to ignore</strong> because actions scale fast and cross domains at machine speed — but the problem applies to any complex system where authority outpaces accountability.</p>
 
-
+<h3 class="h4 mt-4">Concept overview: the Declared Intent Layer</h3>
+<p>The Declared Intent Layer is a proposed governance primitive where every action by a system (especially AI) comes with an explicit, fixed statement of intent at the moment of authorisation/execution. In current practice, intent is usually implicit — organisations deduce what a system “meant” to do after the fact by examining outcomes, logs, or emails. This creates ambiguity and erodes accountability, because intent can be argued or reconstructed differently by each stakeholder.</p>
+<p>The Declared Intent Layer introduces a formal <strong>Declared Intent Record (DIR)</strong> for each action. A DIR states: what the action is, on what object, for whose benefit, how/under what method, under what limits or constraints, and what output is expected. Crucially, the DIR is <strong>time-stamped and immutable</strong>: once an action is executed, its declared intent cannot be changed — only superseded by a new declaration for future actions.</p>
+<p>In essence, this creates a single source of truth about purpose that all layers of governance (authority, policy interpretation, execution, audit) can refer back to, instead of each layer making its own assumptions.</p>
+<p>Why it matters: as AI systems become more autonomous and fast-moving, they can cross multiple domains (personal data, finance, healthcare, etc.) in one chain of operations. Without a clear, shared statement of intent, accountability falls apart when something goes wrong — each party (model developer, deployer, user, regulator) can offer a different story of what was intended. The Declared Intent Layer standardises the <em>structure</em> of intent (not the content) across domains, so that every system action can answer the question: “What was this action intended to do?” in a way that is consistent and verifiable across boundaries.</p>
+<p>Proponents compare this to coordination standards like <strong>double-entry bookkeeping</strong> (standardising financial record structure without mandating business outcomes) and <strong>shipping containers</strong> (standardising the form factor for goods without dictating the goods themselves). By the same logic, a standardised intent record could bring clarity and interoperability to governance processes without prescribing specific policies.</p>
 <h3 class="h4 mt-4">1. The Problem Is Not a Lack of Rules</h3><p>From welfare automation and financial systems to aviation safety and AI-assisted decision-making, post-incident inquiries repeatedly find that systems behaved as designed — but without any fixed, shared declaration of what they were intended to do at the moment they acted.</p><p>The most serious failures in modern systems are rarely caused solely by technical failures. They are failures of unexamined, implicit, or mutable intent.</p><p>When harm occurs, organisations reconstruct intent after the fact using emails, policy documents, logs, model cards, and testimony.</p><p>At that point, good faith and bad faith become indistinguishable, and accountability collapses into interpretation.</p><p>As automation increases and AI systems begin to act across domains, organisations, and regulatory boundaries, the absence of a fixed declaration of intent becomes a systemic risk rather than a local oversight.</p><p>This is not because governance is absent.</p><p>It is because intent has no first-class form.</p><p>AI has not created this problem.</p><p>AI has exposed it.</p>
-
-
-
-
-
-
-
 
 <h3 class="h4 mt-4">2. Why This Is a Global, Cross-Domain Problem</h3>
 <p>Modern systems increasingly operate across domains, organisations, and jurisdictions.</p>
@@ -93,7 +80,6 @@
 <p>Today it is scattered across:</p>
 <ul><li>strategy decks and business cases</li><li>requirements documents and design decisions</li><li>policies, model cards, and risk registers</li><li>approval chains, emails, and conversations</li></ul>
 <p>Each layer infers intent differently:</p>
-<p>Each layer infers intent differently:</p>
 <p>Authority infers intent from roles and permissions</p>
 <p>Policy infers intent from categories and proxies</p>
 <p>Execution follows configuration and code paths</p>
@@ -106,7 +92,6 @@
 <p>Recent progress in AI governance is real and important:</p>
 <ul><li>documentation of intended use</li><li>model cards and system descriptions</li><li>logging and traceability</li><li>approval workflows and human-in-the-loop controls</li><li>emerging intent-attestation tools</li></ul>
 <p>But these approaches share a limitation:</p>
-<p>But these approaches share a limitation:</p>
 <p>They treat intent as documentation or metadata — not as a binding artefact.</p>
 <p>In most cases:</p>
 <ul><li>intent is described about a system, not declared for each action</li><li>intent can be reinterpreted or updated after execution</li><li>different layers still infer purpose independently</li></ul>
@@ -114,7 +99,6 @@
 <p>What is missing is not more policy.</p>
 <p>What is missing is a shared primitive.</p>
 <h3 class="h4 mt-4">5. The Diagnosis: A Missing Layer</h3>
-<p>Most modern systems already operate across a familiar stack:</p>
 <p>Most modern systems already operate across a familiar stack:</p>
 <p>Authority</p>
 <p>Policy Interpretation</p>
@@ -124,7 +108,6 @@
 <p>What does not exist is a shared, explicit representation of intent that binds them together.</p>
 <p>Intent is doing critical work — but it has nowhere to live.</p>
 <h3 class="h4 mt-4">6. The Proposal: The Declared Intent Layer</h3>
-<p>We propose making explicit a layer that already exists implicitly:</p>
 <p>We propose making explicit a layer that already exists implicitly:</p>
 <p>the Declared Intent Layer.</p>
 <p>The Declared Intent Layer sits before authority, policy, and execution.</p>
@@ -138,14 +121,12 @@ before action occurs</li></ul>
 <p>It provides the shared reference point that every other layer evaluates against.</p>
 <h3 class="h4 mt-4">7. Declared Intent Records</h3>
 <p>A Declared Intent Record answers, explicitly and in advance:</p>
-<p>A Declared Intent Record answers, explicitly and in advance:</p>
 <p>What action is intended?</p>
 <p>On what object?</p>
 <p>For whose benefit?</p>
 <p>In what mode or role?</p>
 <p>Under what constraints?</p>
 <p>With what expected output?</p>
-<p>One illustrative structure:</p>
 <p>One illustrative structure:</p>
 <p>WHAT → ON → FOR → HOW → LIMIT → OUTPUT</p>
 <p>This structure is:</p>
@@ -156,13 +137,11 @@ before action occurs</li></ul>
 <p>If intent can be rewritten after execution, accountability collapses.</p>
 <p>Immutability does not mandate a specific technology.</p>
 <p>It requires a guarantee:</p>
-<p>It requires a guarantee:</p>
 <p>once intent is declared and action occurs, it cannot be altered — only superseded.</p>
 <p>This may be achieved through append-only logs, cryptographic signing, trusted timestamping, or distributed ledgers where trust boundaries require it.</p>
 <p>The requirement is immutability and temporal anchoring, not decentralisation.</p>
 <h3 class="h4 mt-4">9. Why a Global Intent Standard Matters</h3>
 <p>A global Declared Intent Record standard does not standardise rules, ethics, or outcomes.</p>
-<p>It standardises the one question every system must answer:</p>
 <p>It standardises the one question every system must answer:</p>
 <p>What was this action intended to do?</p>
 <p>This mirrors past coordination breakthroughs:</p>
@@ -170,13 +149,6 @@ before action occurs</li></ul>
 <p>HTTP standardised requests, not applications</p>
 <p>A global intent standard plays the same role for intent.</p>
 <h3 class="h4 mt-4">10. Why Now</h3><p>Automation is scaling faster than our ability to explain or govern it after the fact.</p><p>Systems that once operated within narrow domains are now deployed across healthcare, finance, public services, education, and critical infrastructure — often as general-purpose tools adapted to high-stakes use. In these contexts, the central questions are no longer purely technical.</p><p>They are questions of intent.</p><p>As systems act with increasing autonomy and influence, debates increasingly turn on what they were meant to do: whether they were intended to inform, recommend, influence, or decide; whether safeguards were binding or aspirational; and whether harmful outcomes represent deviation or fulfilment of purpose.</p><p>Today, these questions are typically answered retrospectively.</p><p>Intent is inferred from documentation, disclaimers, interface language, or post-hoc statements — often after harm has occurred. As a result, accountability becomes narrative rather than factual, and good-faith design becomes indistinguishable from convenient reinterpretation.</p><p>Regulation is responding by demanding greater accountability, traceability, and explainability. But without a shared, durable way to declare intent before execution, these demands can only ever be met after the fact.</p><p>The gap between what systems do and what organisations can credibly say they meant is widening.</p><p>The Declared Intent Layer closes that gap at the only place it can be closed: before execution.</p>
-
-
-
-
-
-
-
 
 <h3 class="h4 mt-4">11. What This Is — and Is Not</h3>
 <p>This is not:</p>
@@ -191,137 +163,6 @@ before action occurs</li></ul>
 <p>Without a durable declaration of intent,</p>
 <p>authority, policy, execution, and audit each tell a different story.</p>
 <p>The Declared Intent Layer ensures they all reference the same one.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="page-section" id="examples">
-<div class="container px-4 px-lg-5">
-<h2 class="text-center mt-0">Worked Examples (Short)</h2>
-<hr class="divider"/>
-<div class="row gx-4 gx-lg-5 justify-content-center">
-<div class="col-lg-8">
-<p class="lead">Two worked examples show how the Declared Intent Record (DIR) binds authority, policy, execution, and audit using a shared <strong>Intent_ID</strong>.</p>
-<div class="mb-4">
-<h3 class="h4">AI governance across domains</h3>
-<p>End-to-End Example: AI Governance (Cross-Domain)</p>
-<p>(Finance + Health + Public Services)</p>
-<p>Scenario</p>
-<p>Consider a public authority deploying an AI system  that provides An AI assistant to help a person apply for public support. To do this, it touches financial data, health-related information, and government systems.</p>
-<p>1️⃣ Declared Intent Layer</p>
-<p>What this layer is doing</p>
-<p>This is the moment where someone must stop implying what they mean and explicitly commit to what they are about to do – digitally.</p>
-<p>Nothing runs yet.</p>
-<p>No data is touched.</p>
-<p>This is about making intent visible and fixed.</p>
-<p>//</p>
-<p>The Declared Intent Record (DIR)</p>
-<p>Intent_ID: DIR-AI-2026-001</p>
-<p>WHAT    assess</p>
-<p>ON      support_eligibility</p>
-<p>FOR     individual_applicant</p>
-<p>HOW     assistive</p>
-<p>LIMIT   no_automated_decisions, explainable, human_review</p>
-<p>OUTPUT  recommendation</p>
-<p>//</p>
-<p>What is recorded</p>
-<p>The declared intent</p>
-<p>Who declared it</p>
-<p>When it was declared</p>
-<p>A unique Intent_ID</p>
-<p>Why this layer exists</p>
-<p>So that later no one has to ask:</p>
-<ul><li>“What did you mean the system to do?”</li></ul>
-<p>The answer is already fixed.</p>
-<p>2️⃣ Authority</p>
-<p>What this layer is doing</p>
-<p>This layer answers a very narrow question:</p>
-<ul><li>“Are you allowed to attempt this specific intent?”</li></ul>
-<p>It does not judge whether the idea is good or safe — only whether the right people are authorised to try.</p>
-<p>What happens here</p>
-<p>Different authorities look at the same intent:</p>
-<p>Different authorities look at the same intent:</p>
-<p>Is this organisation allowed to process financial data for this purpose?</p>
-<p>Is it permitted to handle health-related information?</p>
-<p>Is it allowed to interact with public-sector systems?</p>
-<p>Each authority gives approval (or refusal) for this intent, not in general.</p>
-<p>What is recorded</p>
-<p>Intent_ID</p>
-<p>Approval decision</p>
-<p>Who approved it</p>
-<p>Any limits on approval</p>
-<p>Why this layer exists</p>
-<p>To stop “we were allowed to run the system” being confused with:</p>
-<p>To stop “we were allowed to run the system” being confused with:</p>
-<p>“We were allowed to run this kind of system for this purpose.”</p>
-<p>3️⃣ Policy</p>
-<p>What this layer is doing</p>
-<p>This layer applies existing rules to the declared intent.</p>
-<p>It asks:</p>
-<ul><li>“Given what you say you are about to do, what rules apply?”</li></ul>
-<p>No new rules are invented here.</p>
-<p>What happens here</p>
-<p>Different policy regimes look at the same intent:</p>
-<p>Different policy regimes look at the same intent:</p>
-<p>Health policy sees FOR = individual_applicant</p>
-<p>→ requires safeguards and explanations</p>
-<p><a class="btn btn-primary btn-sm" href="/declaredintent/guide/">Read the full AI example in the companion guide</a></p>
-</div>
-<div class="mb-4">
-<h3 class="h4">Building a house</h3>
-<p>Example 2: Building a House</p>
-<p>(Same structure, different domain)</p>
-<p>Scenario</p>
-<p>A homeowner builds a house on a plot of land.</p>
-<p>Why the Declared Intent Record Is Not Just a Building Plan</p>
-<p>Before construction begins, a homeowner must declare exactly what they intend to build. In the physical world, this declaration is typically expressed through building plans, planning applications, and design documents. These artefacts already capture intent in a practical sense.</p>
-<p>However, these artefacts do not function as a Declared Intent Record in the sense proposed here.</p>
-<p>Building plans are not immutable. They are routinely revised, amended, and superseded as construction progresses. While this flexibility is operationally necessary, it means that there is often no single, fixed record of what was committed to at the moment permission was granted. Intent can shift without a clear historical anchor.</p>
-<p>More importantly, building plans are not designed to act as a binding reference across systems or domains. Even when plans are given identifiers and linked to planning approvals or inspections, these links are local and non-standardised. They do not propagate cleanly into other systems that may have a legitimate interest in the declared intent, such as financial institutions, insurers, or regulatory bodies operating outside the planning domain.</p>
-<p>As a result, different actors may rely on different versions of the “plan,” interpret intent differently, or reconstruct intent retrospectively based on outcomes rather than commitments.</p>
-<p>The Declared Intent Record differs in three critical ways:</p>
-<p>The Declared Intent Record differs in three critical ways:</p>
-<p>Immutability</p>
-<p>The DIR fixes intent at a specific moment in time. Changes to intent require the creation of a new record, rather than the modification of the original. This preserves a clear, auditable history of commitments.</p>
-<p>Standardised structure</p>
-<p>The DIR expresses intent in a consistent, domain-agnostic form. This allows intent to be referenced and interpreted across systems without translation or reinterpretation.</p>
-<p>Cross-domain binding</p>
-<p>The DIR is explicitly designed to be referenced by authority, policy, execution, and audit layers across domains. The same declared intent can be evaluated by planning authorities, building inspectors, financial institutions, insurers, and auditors, each applying their own rules but referencing the same commitment.</p>
-<p>In this sense, the Declared Intent Layer does not replace building plans. It formalises the moment of commitment that plans imply, and makes that commitment durable, inspectable, and reusable beyond the boundaries of a single system or sector.</p>
-<p>1️⃣ Declared Intent Layer</p>
-<p>What this layer is doing</p>
-<p>The homeowner must declare exactly what they intend to build.</p>
-<p>//</p>
-<p>Declared Intent Record</p>
-<p>Intent_ID: DIR-BUILD-2026-014</p>
-<p>WHAT    build</p>
-<p>ON      plot_12_elm_street</p>
-<p>FOR     residential_use</p>
-<p>HOW     single_family_dwelling</p>
-<p>LIMIT   max_2_storeys, footprint&lt;=120m2</p>
-<p>OUTPUT  completed_house</p>
-<p>//</p>
-<p>Why this layer exists</p>
-<p>So later no one argues about what was “meant”.</p>
-<p>2️⃣ Authority</p>
-<p>What this layer is doing</p>
-<p>Checks whether the homeowner is allowed to build this house on this land.</p>
-<p>What is recorded</p>
-<p>Intent_ID</p>
-<p>Planning permission</p>
-<p>Ownership verification</p>
-<p>3️⃣ Policy</p>
-<p>What this layer is doing</p>
-<p>Applies building codes and zoning rules based on the declared plan.</p>
-<p>What is recorded</p>
-<p>Intent_ID</p>
-<p>Applicable regulations</p>
-<p>Required inspections</p>
-<p>4️⃣ Execution</p>
-<p><a class="btn btn-primary btn-sm" href="/declaredintent/guide/">Read the full building example in the companion guide</a></p>
-</div>
-</div>
-</div>
 </div>
 </section>
 <section class="page-section" id="feedback">
@@ -387,9 +228,24 @@ before action occurs</li></ul>
           Email: <a href="mailto:feedback@declaredintent.org">feedback@declaredintent.org</a>
 </p>
 </div>
-</div>
+</section>
+<section class="page-section" id="examples">
+<div class="container px-4 px-lg-5">
+  <h2 class="text-center mt-0">Worked examples</h2>
+  <hr class="divider"/>
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-lg-8">
+      <p class="lead">Examples are the quickest way to see how a Declared Intent Record (DIR) binds authority, policy, execution, and audit using a shared <strong>Intent_ID</strong>.</p>
+      <ul>
+        <li>AI governance across domains (finance + health + public services)</li>
+        <li>Real-world systems example (building approval)</li>
+      </ul>
+      <p><a class="btn btn-primary" href="/declaredintent/examples/">Read the worked examples</a></p>
+    </div>
+  </div>
 </div>
 </section>
+
 <footer class="bg-light py-5">
 <div class="container px-4 px-lg-5"><div class="small text-center text-muted">© 2026 declaredintent.org • <a href="/declaredintent/bio/">Authorship &amp; bio</a></div></div>
 </footer>

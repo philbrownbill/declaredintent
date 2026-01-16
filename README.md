@@ -3,7 +3,7 @@
 This repository hosts the public site for **The Declared Intent Layer** proposal.
 
 - Manifesto (one-page): `/`
-- Companion guide: `/guide/`
+
 - Bio & status: `/bio/`
 
 Feedback: feedback@declaredintent.org
