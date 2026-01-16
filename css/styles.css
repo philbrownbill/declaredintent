@@ -11032,3 +11032,19 @@ hr.divider {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+
+/* =========================
+   Declared Intent schema
+   ========================= */
+
+.intent-schema {
+    background-color: #111;
+    color: #f5f5f5;
+    padding: 14px 18px;
+    font-family: var(--bs-font-monospace);
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+    border-left: 4px solid #666;
+    margin: 16px 0;
+    white-space: nowrap;
+}
