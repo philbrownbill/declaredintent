@@ -11056,4 +11056,11 @@ hr.divider {
     padding-bottom: 6rem;
   }
 }
+/* Force smaller masthead on content pages */
+header.masthead.masthead-small {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: 6rem !important;
+  padding-bottom: 3rem !important;
+}
 
