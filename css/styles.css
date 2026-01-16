@@ -10993,3 +10993,20 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+/* === Spacing reductions for manifesto flow === */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+section#examples {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+section#feedback {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
