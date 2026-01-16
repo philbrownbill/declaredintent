@@ -11046,5 +11046,5 @@ hr.divider {
     letter-spacing: 0.05em;
     border-left: 4px solid #666;
     margin: 16px 0;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
