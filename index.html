@@ -72,33 +72,30 @@ It introduces a missing governance primitive: a standard way to declare what a s
 
 
 
+
 <h3 class="h4 mt-4">From Speed Limits to Flight Plans: Why Intent Must Be Declared</h3>
 
-<p>In the physical world, we do not rely on guesswork to prevent harm.</p>
+<p>In the physical world, we recognise that some capabilities are inherently dangerous at scale.</p>
 
-<p>When a driver enters a new town or country, they are not expected to infer how fast they should drive based on context, custom, or judgement alone. Instead, the governing rules of the road are made explicit. A speed limit sign declares the expected constraint within which driving must occur.</p>
+<p>Cars, when operated at speed, can cause serious harm. For that reason, we do not leave decisions about speed entirely to individual judgement. Instead, societies put laws and constraints in place to protect people, supported by a framework of speed limits.</p>
 
-<p>Crucially, these signs work because they are standardised.</p>
+<p>Speed limits do not exist because drivers are malicious. They exist because risk increases with speed, scale, and context — and because relying on individual interpretation alone leads to harm.</p>
 
-<p>If every town expressed speed limits differently — some using colours, others symbols, others vague instructions like “drive carefully” — interpretation would become inconsistent, enforcement unreliable, and harm more likely. The problem would not be a lack of rules, but a lack of a shared way to express them.</p>
+<p>Crucially, speed limits are standardised.</p>
 
-<p>Standardisation is what allows drivers, police, courts, insurers, and vehicle systems to interpret the same signal in the same way.</p>
+<p>A speed limit means the same thing wherever you encounter it. Drivers understand, in advance, how fast they are allowed to drive in different contexts — residential streets, main roads, motorways — even when they are in unfamiliar places.</p>
 
-<p>The sign does not describe what the driver intends to do.<br/>
-It does not control the vehicle.<br/>
-It does not optimise behaviour.</p>
+<p>This shared standard is what makes the system work.</p>
 
-<p>What it does is make governance explicit, in advance, in a form that can be consistently understood.</p>
+<p>If every town expressed speed limits differently — using colours, symbols, vague instructions like “drive carefully”, or locally defined meanings — drivers would be forced to guess. Enforcement would become inconsistent, compliance uneven, and harm more likely. The problem would not be a lack of rules, but a lack of a shared way to express them.</p>
 
-<p>Because of that shared expression:</p>
-<ul>
-  <li>expectations are clear</li>
-  <li>behaviour can be anticipated</li>
-  <li>enforcement becomes possible</li>
-  <li>liability can be assessed after the fact</li>
-</ul>
+<p>Speed limit signs do not tell drivers what they intend to do.<br/>
+They do not control the vehicle.<br/>
+They do not optimise behaviour.</p>
 
-<p>And importantly, the value of speed limits is not that they improve traffic flow. Their primary value lies in the harm they prevent by removing ambiguity.</p>
+<p>They establish a clear, standardised constraint within which action must occur.</p>
+
+<p>And importantly, the primary value of speed limits is not efficiency or optimisation. It is harm prevention — achieved by making expectations explicit, consistent, and widely understood.</p>
 
 <p>Now consider a more complex system.</p>
 
@@ -125,6 +122,7 @@ Not to replace judgement.<br/>
 But to make responsibility, governance, and harm prevention possible at scale.</p>
 
 <h3 class="h4 mt-4">Concept overview: the Declared Intent Layer</h3>
+
 
 <p><strong>This is a proposal for a global standard — not a product, platform, or compliance tool.</strong> The Declared Intent Layer defines a shared, interoperable way for systems to declare intent so that authority, policy interpretation, execution, and audit all reference the same statement of purpose. It specifies <em>what must be made explicit</em>, not <em>how systems must be built</em>, allowing multiple tools, schemas, and implementations to coexist.</p>
 <p>The Declared Intent Layer is a proposed governance primitive where every action by a system (especially AI) comes with an explicit, fixed statement of intent at the moment of authorisation/execution. In current practice, intent is usually implicit — organisations deduce what a system “meant” to do after the fact by examining outcomes, logs, or emails. This creates ambiguity and erodes accountability, because intent can be argued or reconstructed differently by each stakeholder.</p>
