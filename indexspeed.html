@@ -53,79 +53,38 @@
 <div class="row gx-4 gx-lg-5 justify-content-center">
 <div class="col-lg-8">
 
-
-
 <h3 class="h4 mt-4">TL;DR — The short version</h3>
-<p><strong>The Declared Intent Layer is a proposal for a global standard that requires systems to declare their intent before they act.</strong>
-That intent is made explicit, machine-readable, and persistent, so it can be interpreted by people, policies, and connected systems.</p>
-
-<p>In the physical world, we already rely on declared intent to prevent harm at scale. 
-Speed limit signs make expected behaviour explicit and standardised so it can be consistently understood and enforced. 
-Flight plans go further, declaring in advance what an aircraft intends to do across jurisdictions, authorities, and systems.</p>
-
-<p>Digital systems are now reaching similar levels of scale, speed, and cross-domain impact — yet they are often allowed to act without declaring their intent in a comparable, standardised way.</p>
-
-<p><strong>This creates a governance gap.</strong> When intent is inferred after the fact, authority becomes unclear, accountability weakens, and harm is harder to prevent or resolve.</p>
-
-<p><strong>The Declared Intent Layer fills this gap.</strong> It does not control execution or replace judgement.
-It introduces a missing governance primitive: a standard way to declare what a system is doing, on what, for what purpose, and within what limits — before action occurs. <em>The next section grounds this proposal in familiar physical systems — from speed limits to flight plans — before introducing the framework.</em></p>
-
-
+<p><strong>Declared Intent proposes a global standard for accountability in complex systems: make intent explicit, bind it to authority, and preserve it as systems act.</strong></p>
+<p>Most system failures are not caused by missing rules, but by <em>intent that is never clearly declared, fixed, and defended at the moment action is authorised and executed</em>. Under pressure, decisions drift, authority becomes ambiguous, and accountability weakens.</p>
+<p><strong>AI and automation make this gap impossible to ignore</strong> because actions scale fast and cross domains at machine speed — but the problem applies to any complex system where the power to act scales faster than the ability to explain, justify, and constrain those actions.</p>
 
 <h3 class="h4 mt-4">From Speed Limits to Flight Plans: Why Intent Must Be Declared</h3>
-
 <p>In the physical world, we do not rely on guesswork to prevent harm.</p>
-
-<p>When a driver enters a new town or country, they are not expected to infer how fast they should drive based on context, custom, or judgement alone. Instead, the governing rules of the road are made explicit. A speed limit sign declares the expected constraint within which driving must occur.</p>
-
-<p>Crucially, these signs work because they are standardised.</p>
-
-<p>If every town expressed speed limits differently — some using colours, others symbols, others vague instructions like “drive carefully” — interpretation would become inconsistent, enforcement unreliable, and harm more likely. The problem would not be a lack of rules, but a lack of a shared way to express them.</p>
-
-<p>Standardisation is what allows drivers, police, courts, insurers, and vehicle systems to interpret the same signal in the same way.</p>
-
-<p>The sign does not describe what the driver intends to do.<br/>
-It does not control the vehicle.<br/>
-It does not optimise behaviour.</p>
-
-<p>What it does is make governance explicit, in advance, in a form that can be consistently understood.</p>
-
-<p>Because of that shared expression:</p>
+<p>When a driver enters a new town or country, they do not infer how fast they should drive based on vibes, precedent, or local custom. Instead, the expected behaviour is declared explicitly. A speed limit sign states, clearly and in advance, how fast vehicles may travel in that context.</p>
+<p><strong>Critically, these signs work because they are standardised.</strong></p>
+<p>If every town used a different system — some relying on colours, others on symbols, others simply stating “drive carefully” — interpretation would become inconsistent, enforcement unreliable, and harm more likely. Standardisation is what allows drivers, police, courts, insurers, and vehicle systems to interpret the same signal in the same way.</p>
+<p>The sign does not control the car.<br/>It does not force compliance.<br/>It does not optimise the journey.</p>
+<p>It declares intent — publicly, consistently, and in a form that can be interpreted by many different actors.</p>
+<p>Because of that declaration:</p>
 <ul>
-  <li>expectations are clear</li>
-  <li>behaviour can be anticipated</li>
+  <li>drivers understand expectations</li>
+  <li>other road users can anticipate behaviour</li>
   <li>enforcement becomes possible</li>
   <li>liability can be assessed after the fact</li>
 </ul>
-
-<p>And importantly, the value of speed limits is not that they improve traffic flow. Their primary value lies in the harm they prevent by removing ambiguity.</p>
-
+<p>And, importantly, the value of speed limits is not that they make travel faster or more efficient. <strong>Their primary value lies in the harm they prevent.</strong></p>
 <p>Now consider a more complex system.</p>
-
-<p>Before an aircraft takes off, it must file a flight plan. This is a declaration of intent. It states what the aircraft intends to do: where it will go, which airspace it will enter, under what rules, and within what limits. That single declaration is then interpreted by many different authorities — airports, air traffic control, national regulators — each applying their own policies and constraints.</p>
-
-<p>The flight plan does not fly the plane.<br/>
-Pilots still make decisions.<br/>
-Systems still execute actions.</p>
-
+<p>Before an aircraft takes off, it must file a flight plan. This plan declares what the aircraft intends to do: where it will go, which airspace it will enter, under what rules, and within what limits. That single declaration is then interpreted by many different authorities — airports, air traffic control, national regulators — each applying their own policies and constraints.</p>
+<p>The flight plan does not fly the plane.<br/>Pilots still make decisions.<br/>Systems still execute actions.</p>
 <p>But without a declared, shared intent, global aviation would be unthinkable.</p>
-
-<p>Importantly, flight plans exist not because pilots are untrustworthy, but because the cost of misunderstanding intent at scale is catastrophic. As systems become faster, more automated, and more interconnected, the need to make intent explicit increases — not decreases.</p>
-
-<p>Digital systems are now crossing domains in the same way aircraft cross borders. Decisions made in one context increasingly reach into others: finance into healthcare, logistics into welfare, data systems into people’s lives. Yet unlike aviation, these systems are often allowed to act without declaring their intent in a form that others can reliably read, interpret, or constrain.</p>
-
+<p>Importantly, flight plans exist not because planes are untrustworthy, but because the cost of misunderstanding intent at scale is catastrophic. As systems become faster, more automated, and more interconnected, the need to make intent explicit increases — not decreases.</p>
+<p>Digital systems are now crossing domains in the same way aircraft cross borders. Decisions made in one context increasingly reach into others: finance into healthcare, logistics into welfare, data systems into people’s lives. Yet unlike roads or airspace, these systems are often allowed to act without declaring their intent in a form that others can reliably read, interpret, or constrain.</p>
 <p>We are asking machines to operate in environments where humans long ago decided that inference was not enough.</p>
-
 <p>The Declared Intent Layer exists to correct this imbalance.</p>
-
-<p>It proposes that before consequential actions are taken, systems should do what our safest large-scale systems already do: make governance explicit and declare intent in advance — in a standard, interpretable form.</p>
-
-<p>Not to control execution.<br/>
-Not to replace judgement.<br/>
-But to make responsibility, governance, and harm prevention possible at scale.</p>
+<p>It proposes that before consequential actions are taken, systems should do what our safest physical systems already do: declare what they are doing, on what, for what purpose, and within what limits — in a standard, explicit, and interpretable way.</p>
+<p>Not to control execution.<br/>Not to replace judgement.<br/>But to make responsibility, governance, and harm prevention possible at scale.</p>
 
 <h3 class="h4 mt-4">Concept overview: the Declared Intent Layer</h3>
-
 <p><strong>This is a proposal for a global standard — not a product, platform, or compliance tool.</strong> The Declared Intent Layer defines a shared, interoperable way for systems to declare intent so that authority, policy interpretation, execution, and audit all reference the same statement of purpose. It specifies <em>what must be made explicit</em>, not <em>how systems must be built</em>, allowing multiple tools, schemas, and implementations to coexist.</p>
 <p>The Declared Intent Layer is a proposed governance primitive where every action by a system (especially AI) comes with an explicit, fixed statement of intent at the moment of authorisation/execution. In current practice, intent is usually implicit — organisations deduce what a system “meant” to do after the fact by examining outcomes, logs, or emails. This creates ambiguity and erodes accountability, because intent can be argued or reconstructed differently by each stakeholder.</p>
 <p>The Declared Intent Layer introduces a formal <strong>Declared Intent Record (DIR)</strong> for each action. A DIR states: what the action is, on what object, for whose benefit, how/under what method, under what limits or constraints, and what output is expected. Crucially, the DIR is <strong>time-stamped and immutable</strong>: once an action is executed, its declared intent cannot be changed — only superseded by a new declaration for future actions.</p>
