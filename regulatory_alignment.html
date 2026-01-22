@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="description" content="How the Declared Intent Layer aligns with and strengthens risk-based AI regulation, including the EU AI Act."/>
+<title>Regulatory Alignment · Declared Intent</title>
+<link href="/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700" rel="stylesheet"/>
+<link href="/css/styles.css" rel="stylesheet"/>
+</head>
+
+<body id="page-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="/">Declared Intent</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/#manifesto">Manifesto</a></li>
+        <li class="nav-item"><a class="nav-link" href="/examples/">Examples</a></li>
+        <li class="nav-item"><a class="nav-link" href="/regulation/">Regulation</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#feedback">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="masthead masthead-small" style="padding-top:8rem;padding-bottom:4rem;">
+  <div class="container px-4 px-lg-5">
+    <h1 class="text-white">Regulatory Alignment</h1>
+    <p class="text-white-75 mb-0">
+      How the Declared Intent Layer supports risk‑based AI regulation, including the EU AI Act.
+    </p>
+  </div>
+</header>
+
+<section class="page-section">
+<div class="container px-4 px-lg-5">
+<div class="row gx-4 gx-lg-5 justify-content-center">
+<div class="col-lg-9">
+
+<p class="lead">
+The Declared Intent Layer is not a compliance framework or a legal instrument.
+It is a technical governance primitive that aligns closely with how modern AI regulation — including the EU AI Act — already works.
+</p>
+
+<h2 class="mt-4">1. Regulation Already Depends on Intent</h2>
+<p>
+Risk-based AI regulation hinges on a simple but powerful concept: <strong>intended purpose</strong>.
+Under the EU AI Act, an AI system’s obligations, risk classification, and liability exposure depend on what the system is declared to be used for, in which context, and under what conditions.
+</p>
+<p>
+In practice, this makes intent load-bearing. Yet today, intent is usually expressed implicitly — scattered across documentation, policies, prompts, contracts, and post-hoc explanations.
+</p>
+<p>
+When harm occurs, regulators are often forced to reconstruct intent after the fact.
+</p>
+
+<h2 class="mt-4">2. The Intent Gap in Modern AI Systems</h2>
+<p>
+This dependency on intended purpose applies to all AI systems — not just general-purpose ones.
+</p>
+<p>
+In practice, however, intent is rarely fixed or operational at the moment a system acts.
+Even for narrowly scoped systems, intent is typically described in narrative artefacts: specifications, policies, model cards, risk assessments, contracts, and internal governance documents.
+</p>
+<p>
+There is often no single, authoritative record that captures what the system was explicitly committed to doing at the point of authorisation or execution.
+As a result, intent is inferred from behaviour, configuration, or outcomes — or argued about after an incident.
+</p>
+<p>
+This creates a structural gap: regulation is asked to govern intent, but intent itself is not treated as a first-class, technical object.
+It does not exist in a durable, inspectable form that can be consistently referenced by authority checks, policy application, execution logs, and audit.
+</p>
+
+<h2 class="mt-4">3. What the Declared Intent Layer Adds</h2>
+<p>
+The Declared Intent Layer introduces a missing technical layer: a <strong>Declared Intent Record (DIR)</strong> fixed at the moment of authorisation.
+</p>
+<p>
+A DIR explicitly states:
+</p>
+<ul>
+  <li>what action is intended</li>
+  <li>on what object</li>
+  <li>for what purpose</li>
+  <li>under what constraints</li>
+  <li>with what expected output</li>
+</ul>
+<p>
+This declaration is immutable once execution begins, and is referenced consistently by authority, policy, execution, and audit layers.
+</p>
+<p>
+The Declared Intent Layer does not decide legality or enforce policy.
+It makes intent legible and stable so that regulation can operate on something concrete.
+</p>
+
+<h2 class="mt-4">4. Mapping to the EU AI Act</h2>
+<p>
+The Declared Intent Layer aligns cleanly with the EU AI Act’s structure:
+</p>
+<ul>
+  <li><strong>Intended purpose</strong> → Declared Intent Record</li>
+  <li><strong>Risk classification</strong> → Interpretation of declared intent</li>
+  <li><strong>Provider vs deployer responsibility</strong> → Who declares intent</li>
+  <li><strong>Post-market monitoring</strong> → Audit against immutable intent</li>
+</ul>
+<p>
+When intent is declared explicitly and early, regulators can evaluate compliance without reconstructing narratives after harm has occurred.
+</p>
+
+<h2 class="mt-4">5. Accountability Without Over-Prescription</h2>
+<p>
+Crucially, the Declared Intent Layer does not standardise ethics, policy, or outcomes.
+It standardises only the structure of intent.
+</p>
+<p>
+Different regulators can apply different rules to the same declared intent, just as aviation authorities apply different airspace rules to the same flight plan.
+</p>
+<p>
+This preserves regulatory sovereignty while enabling interoperability.
+</p>
+
+<h2 class="mt-4">6. Why Reusable AI Systems Make This Gap Impossible to Ignore <span class="text-muted">(optional)</span></h2>
+<p>
+Some AI systems are built to do one specific job.
+</p>
+<p>
+For example:
+</p>
+<ul>
+  <li>a system that checks whether a loan application meets fixed criteria</li>
+  <li>a system that flags unusual transactions for review</li>
+  <li>a system that routes customer service requests</li>
+</ul>
+<p>
+In these cases, the system’s purpose is narrow and mostly fixed. Even if intent is poorly recorded, it can often be inferred from the system’s design.
+</p>
+<p>
+Many modern AI systems are different. They are built to be <strong>reused across many tasks</strong>.
+A single system might help draft emails, summarise documents, analyse patterns in data, or support decision-making in different domains.
+</p>
+<p>
+The technology stays the same. What changes is <strong>how people use it</strong>.
+This is what is meant by <em>general-purpose</em> or <em>reusable</em> AI.
+</p>
+<p>
+A helpful way to think about it is as a tool rather than a machine.
+A hammer has no single purpose on its own — its purpose depends on who is using it, and for what.
+The same is true of reusable AI systems.
+</p>
+<p>
+Because of this, intent is no longer defined only at design time.
+It is defined when the system is deployed, by a specific actor, in a specific context, for a specific outcome.
+</p>
+<p>
+If intent is not explicitly declared at the moment of use:
+</p>
+<ul>
+  <li>the same system can quietly move into high-risk situations</li>
+  <li>responsibility can shift without anyone noticing</li>
+  <li>regulators must infer purpose after the fact</li>
+</ul>
+<p>
+Reusable systems do not create a different governance problem. They make the existing one visible.
+The Declared Intent Layer ensures that whenever intent is defined — whether once or many times — it is declared explicitly, fixed before execution, and available for oversight.
+</p>
+
+<h2 class="mt-4">7. Beyond the EU</h2>
+<p>
+Although the EU AI Act provides a clear illustration, the same problem appears globally.
+OECD principles, national AI frameworks, and sector-specific rules all rely — implicitly or explicitly — on understanding what a system was meant to do.
+</p>
+<p>
+A global, technical standard for declared intent offers a common reference point across jurisdictions without requiring harmonised law.
+</p>
+
+<h2 class="mt-4">Conclusion</h2>
+<p>
+The Declared Intent Layer does not replace regulation.
+It strengthens it by giving regulators, deployers, and auditors a stable object to reason about.
+</p>
+<p>
+As AI systems become more autonomous, adaptable, and cross-domain, making intent explicit before execution is not optional.
+It is a prerequisite for credible, scalable governance.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="bg-light py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="small text-center text-muted">
+      <a href="/">Back to manifesto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
